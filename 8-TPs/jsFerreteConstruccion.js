@@ -17,7 +17,7 @@ function Circulo ()
 	var radio, res;
 	radio = document.getElementById("Radio").value;
 	res = (Math.PI * 2 * radio) * 3;
-	alert(res);
+	alert(res.toFixed(2));
 	
 }
 function Materiales () 
