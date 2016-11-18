@@ -14,7 +14,7 @@ function Rectangulo ()
 }
 function Circulo () 
 {
-	var radio, pi, res;
+	var radio, res;
 	radio = document.getElementById("Radio").value;
 	res = (Math.PI * 2 * radio) * 3;
 	alert(res);
