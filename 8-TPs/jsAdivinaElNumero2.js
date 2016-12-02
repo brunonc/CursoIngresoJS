@@ -23,32 +23,45 @@ function verificar()
 {
 	var numero;
 	numero = document.getElementById("numero").value;
-	contadorIntentos = ++contadorIntentos;
-	document.getElementById("intentos").value = contadorIntentos;
-	if (numero > numeroSecreto) {
-		alert("El número secreto es menor");
-	} else if (numero < numeroSecreto) {
-		alert("El número secreto es mayor");
-	} else {
-		if (contadorIntentos == 1) {
-			alert("usted es un Psíquico");
-		} else if (contadorIntentos == 2) {
-			alert("excelente percepción");
-		} else if (contadorIntentos == 3) {
-			alert("Esto es suerte");
-		} else if (contadorIntentos == 4) {
-			alert("Excelente técnica");
-		} else if (contadorIntentos == 5) {
-			alert("usted está en la media");
-		} else if (contadorIntentos > 5 && contadorIntentos < 11) {
-			alert("falta técnica");
+	if (contadorIntentos != undefined) {
+		contadorIntentos = ++contadorIntentos;
+		document.getElementById("intentos").value = contadorIntentos;
+		if (numero > numeroSecreto) {
+			alert("El número secreto es menor");
+		} else if (numero < numeroSecreto) {
+			alert("El número secreto es mayor");
 		} else {
-			alert("afortunado en el amor!!")
-		}
+			switch (contadorIntentos) {
+				case 1 :
+					alert("usted es un Psíquico");
+					break;
+				case 2 :
+					alert("excelente percepción");
+					break;
+				case 3 :
+					alert("Esto es suerte");
+					break;
+				case 4 :
+					alert("Excelente técnica");
+					break;
+				case 5 :
+					alert("usted está en la media");
+					break;
+				case 6 :
+				case 7 :
+				case 8 :
+				case 9 :
+				case 10 :
+					alert("falta técnica");
+					break;				
+				default :
+					alert("afortunado en el amor!!")
+					break;
 
-		comenzar();
-		document.getElementById("numero").value = "";
-		document.getElementById("intentos").value = "";
+			}
+			comenzar();
+			document.getElementById("numero").value = "";
+			document.getElementById("intentos").value = "";
+		}
 	}
-	
 }
