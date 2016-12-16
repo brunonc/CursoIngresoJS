@@ -33,13 +33,13 @@ function Mostrar()
 		respuesta = prompt("Desea ingresar otro número", "si");
 	}
 
-	document.write("<b>Suma de los negativos:</b> " + sumaNegativos);
-	document.write("<b>Suma de los positivos:</b> " + sumaPositivos);
-	document.write("<b>Cantidad de los positivos:</b> " + cantPositivos);
-	document.write("<b>Cantidad de los negativos:</b> " + cantNegativos);
-	document.write("<b>Cantidad de ceros:</b> " + cantCeros);
-	document.write("<b>Cantidad de números pares:</b> " + cantPares);
-	document.write("<b>Promedio de positivos:</b> " + sumaPositivos/cantPositivos);
-	document.write("<b>Promedio de positivos:</b> " + sumaNegativos/cantNegativos);
-	document.write("<b>Diferencia entre positivos y negativos:</b> " + sumaPositivos-sumaNegativos);
+	document.write("<b>Suma de los negativos:</b> " + sumaNegativos + "<br>");
+	document.write("<b>Suma de los positivos:</b> " + sumaPositivos + "<br>");
+	document.write("<b>Cantidad de los positivos:</b> " + cantPositivos + "<br>");
+	document.write("<b>Cantidad de los negativos:</b> " + cantNegativos + "<br>");
+	document.write("<b>Cantidad de ceros:</b> " + cantCeros + "<br>");
+	document.write("<b>Cantidad de números pares:</b> " + cantPares + "<br>");
+	document.write("<b>Promedio de positivos:</b> " + sumaPositivos/cantPositivos + "<br>");
+	document.write("<b>Promedio de positivos:</b> " + sumaNegativos/cantNegativos + "<br>");
+	document.write("<b>Diferencia entre positivos y negativos:</b> " + sumaPositivos-sumaNegativos + "<br>");
 }//FIN DE LA FUNCIÓN
